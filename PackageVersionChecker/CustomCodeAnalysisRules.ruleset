@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="SSB Style and Code Quality Rules" Description="Custom Rules" ToolsVersion="15.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+    <Rule Id="CA1010" Action="Warning" />
+    <Rule Id="CA1061" Action="Warning" />
+    <Rule Id="CA1707" Action="Warning" />
+    <Rule Id="CA1708" Action="Warning" />
+    <Rule Id="CA1710" Action="None" />
+    <Rule Id="CA1711" Action="Warning" />
+    <Rule Id="CA1801" Action="Warning" />
+    <Rule Id="CA1820" Action="Warning" />
+    <Rule Id="CA2100" Action="Warning" />
+  </Rules>
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.CSharp.ReadabilityRules">
+    <Rule Id="SA0001" Action="None" />
+    <Rule Id="SA1003" Action="None" />
+    <Rule Id="SA1200" Action="None" />
+    <Rule Id="SA1633" Action="None" />
+    <Rule Id="SA1309" Action="None" />
+    <Rule Id="SA1101" Action="None" />
+    <Rule Id="SA1413" Action="Hidden" />
+    <Rule Id="SA1009" Action="None" />
+    <Rule Id="SA1117" Action="None" />
+    <Rule Id="SA1116" Action="None" />
+    <Rule Id="SA1013" Action="Hidden" />
+    <Rule Id="SA1012" Action="Hidden" />
+    <Rule Id="SA1625" Action="None" />
+    <Rule Id="SA1629" Action="None" />
+    <Rule Id="SA1127" Action="None" />
+    <Rule Id="SA1401" Action="None" />
+    <Rule Id="SA1128" Action="Hidden" />
+    <Rule Id="SA1110" Action="None" />
+    <Rule Id="SA1111" Action="None" />
+    <Rule Id="SA1118" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1710" Action="None" />
+    <Rule Id="CA2007" Action="None" />
+    <Rule Id="CA1724" Action="None" />
+    <Rule Id="CA1716" Action="None" />
+    <Rule Id="CA2227" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="Microsoft.NetCore.Analyzers" RuleNamespace="Microsoft.NetCore.Analyzers">
+    <Rule Id="CA1303" Action="None" />
+    <Rule Id="CA1304" Action="None" />
+  </Rules>
+</RuleSet>
