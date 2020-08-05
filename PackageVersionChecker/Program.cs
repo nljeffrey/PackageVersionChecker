@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using PackageVersionChecker.Models;
@@ -6,8 +6,8 @@ using PackageVersionChecker.Models;
 namespace PackageVersionChecker
 {
     /// <summary>
-    /// When the tool starts, it asks for a filepath. The path and it's subfolders will be searched for packages.config files.
-    /// After the files are collected, a comparison can be made to see if there are mismatches or all found versions can be shown.
+    /// When the tool starts, it asks for a filepath. The folder and it's subfolders will be searched for csproj files.
+    /// After the files are collected, a comparison can be made to see if there are mismatches or all versions can be shown.
     /// </summary>
     public static class Program
     {
@@ -15,7 +15,8 @@ namespace PackageVersionChecker
         /// The main program.
         /// </summary>
         /// <param name="args">Arguments, not used but required.</param>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "Standard required.")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification =
+            "Standard required.")]
         public static void Main(string[] args)
         {
             var allVersions = false;
@@ -75,7 +76,7 @@ namespace PackageVersionChecker
             foreach (var package in groupedPackages)
             {
                 var versionList = package.Select(p => p.Value
-                        .Select(pv => pv.Version)).SelectMany(v => v).Distinct();
+                    .Select(pv => pv.Version)).SelectMany(v => v).Distinct();
                 foreach (var version in versionList)
                 {
                     Console.WriteLine($"Package: {package.Key} > {version}");
